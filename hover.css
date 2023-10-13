@@ -1,0 +1,48 @@
+/* _-_-_-_-Category Section's -_-_-_-_ */
+.cat {
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    position: relative;
+    /* left: 350px; */
+}
+.cat img {
+    max-width: 100%
+}
+.cat a {
+    width: 100%;
+    height: 0px;
+    left: 0;
+    bottom: 0px;
+    text-align:center;
+    font-size: 40px;
+    text-decoration: none;
+    color:rgb(31, 161, 247);
+    position: absolute;
+    transition: 0.5s ease all;
+    visibility: hidden;
+    opacity: 0;
+} 
+.cat:hover a {
+    background-color: #97FFF4;
+    visibility: visible;
+   /* height: 16%;*/
+    padding: 15% 0; 
+    opacity: 1;
+    
+}
+.cat:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+button{
+    position: relative;
+    bottom: 30px;
+    padding: 10px 20px;
+    color: red;
+    background-color:#fece00 ;
+    font-size:19px;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 5px solid white;
+}
