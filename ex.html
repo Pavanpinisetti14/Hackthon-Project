@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        .auth-box{
+            width:400px;
+            height:500px;
+            background-color: aquamarine;
+            position: absolute;
+            left:550px;
+            top:125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-box">
+        <div class="heading-box">
+            <div class="sign-up">
+                <button id="sbtn">Sign-Up</button>
+            </div>
+            <div class="log-in">
+                <button id="lbtn">login</button>
+            </div>
+        </div>
+        <div id="first">
+            <h1>i am first</h1>
+        </div>
+        <div id="second">
+            <h1>i am second</h1>
+        </div>
+    </div>
+    <script>
+        let var1=document.getElementById("first");
+        let var2=document.getElementById("second");
+
+        document.getElementById("sbtn").onclick=function(){
+            var2.style.display="none";
+        }
+    </script>
+</body>
+</html>
