@@ -7,37 +7,54 @@
     <style>
         .auth-box{
             width:400px;
-            height:500px;
+            height:450px;
             background-color: aquamarine;
             position: absolute;
             left:550px;
             top:125px;
         }
+        .header{
+            width: 400px;
+            height: 80px;
+            background-color:aqua;
+            display:flex;
+        }
+        button{
+            width: 200px;
+            background-color: transparent;
+            border: none;
+        }
+        #txtcontent{
+            width: 400px;
+            height:370px;
+            background-color: tomato;
+            position:absolute;
+        }
     </style>
 </head>
 <body>
     <div class="auth-box">
-        <div class="heading-box">
-            <div class="sign-up">
-                <button id="sbtn">Sign-Up</button>
-            </div>
-            <div class="log-in">
-                <button id="lbtn">login</button>
-            </div>
+        <div class="header">
+            <button id ="sbtn"type="button" style="border-right:5px solid black">Signup</button>
+            <button id ="lbtn"type="button">Login</button>
         </div>
-        <div id="first">
-            <h1>i am first</h1>
-        </div>
-        <div id="second">
-            <h1>i am second</h1>
+        <div id="txtcontent1" style="display: none;">signup-form</div>
+        <div id="txtcontent2">
+            <input type="text" placeholder="Enter your email address">
+            <input type="password">
         </div>
     </div>
     <script>
-        let var1=document.getElementById("first");
-        let var2=document.getElementById("second");
+        let var1=document.getElementById("txtcontent1");
+        let var2=document.getElementById("txtcontent2");
 
         document.getElementById("sbtn").onclick=function(){
             var2.style.display="none";
+            var1.style.display="";
+        }
+        document.getElementById("lbtn").onclick=function(){
+            var1.style.display="none";
+            var2.style.display="";
         }
     </script>
 </body>
